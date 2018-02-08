@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Account Balance</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid" id="mainStats">
+      <div class="container">
+        <h1 class="lead">Available Budget in February 2018</h1>
+        <h1 class="display-2" id="yourBudget"></h1>
+        <button type="button" class="btn btn-info btn-lg btn-block" style="border-radius: 0px; width: 50%; margin: 0 auto;">
+          <span style="color: #383838; float: left;">INCOME:</span>
+          <span style="float: right;" id="initialBudget">+ 235.00€</span>
+        </button>
+        <br>
+        <button type="button" class="btn btn-danger btn-lg btn-block" style="border-radius: 0px; width: 50%; margin: 0 auto; margin-top: -18px;">
+          <span style="color: #383838; float: left;">EXPENSES:</span>
+          <span style="float: right;" id="expensesB">- 0€</span>
+        </button>
+      </div>
+    </div>
+    <nav class="navbar navbar-light bg-light justify-content-between" style="margin-top: -32px;">
+      <form class="form-inline" style="margin: 0 auto;">
+        <select id="inputPlus" class="form-control">
+          <option selected>+</option>
+          <option>-</option>
+        </select>
+        <input class="form-control mx-sm-1" placeholder="Add a Description" aria-label="Add a Description" style="width: 33vw;" id="desc">
+        <input class="form-control mx-sm-1" placeholder="Value" aria-label="Value" style="width: 3.5vw;" id="amount">
+        <span style="margin-left: 10px;"><i class="fas fa-check" style="color: red;" onclick="add()"></i></span>
+      </form>
+    </nav>
+    <div id="main" style="margin-top: 20px; text-align: left;">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="lead" style="color: #5bc0de;">INCOME</h2>
+            <hr>
+            <div id="incomebox">
+            </div>
+          </div>
+          <div class="col">
+            <h2 class="lead" style="color: #d9534f;">EXPENSES</h2>
+            <hr>
+            <div id="expensesbox"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

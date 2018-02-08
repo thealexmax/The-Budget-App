@@ -1,0 +1,18 @@
+#mainStats {
+  background-image: url('https://cdn.photographylife.com/wp-content/uploads/2017/01/Simplified-composition-of-the-same-photo.jpg');
+  background-size: cover;
+  color: #FFFFFF;
+  text-align: center;
+  /* Enable this if you want your image to be centered */
+  /* background-position: center; */
+}
+
+.positiveAmount {
+  float: right; 
+  color: #5bc0de;
+}
+
+.negativeAmount {
+  float: right; 
+  color: #d9534f;
+}
